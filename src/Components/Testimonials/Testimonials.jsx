@@ -44,11 +44,19 @@ function Testimonials() {
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
 
-      <Swiper className="container testimonials__container">
+      <Swiper className="container testimonials__container"
+          // install Swiper modules
+      modules={[Pagination]}
+      spaceBetween={40}
+      slidesPerView={1}
+      pagination={{ clickable: true }}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log('slide change')}>
         {
           data.map(({avatar, title, review}, i) =>
           { return ( 
             <SwiperSlide key={i} className="testimonial">
+              
               <div className="client__avatar">
                 <img src={avatar}/>
               </div>

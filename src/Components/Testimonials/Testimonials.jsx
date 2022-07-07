@@ -5,6 +5,16 @@ import Avatar2 from '../../assets/avatar2.jpg'
 import Avatar3 from '../../assets/avatar3.jpg'
 import Avatar4 from '../../assets/avatar4.jpg'
 
+// import Swiper core and required modules
+import { Pagination} from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
 const data = [
 {
   avatar: Avatar1,
@@ -34,11 +44,11 @@ function Testimonials() {
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
 
-      <div className="container testimonials__container">
+      <Swiper className="container testimonials__container">
         {
           data.map(({avatar, title, review}, i) =>
           { return ( 
-            <article key={i} className="testimonial">
+            <SwiperSlide key={i} className="testimonial">
               <div className="client__avatar">
                 <img src={avatar}/>
               </div>
@@ -46,12 +56,12 @@ function Testimonials() {
               <small className='client__review'>
                 {review}
               </small>
-            </article>
+            </SwiperSlide>
           )
           })
         }
         
-      </div>
+      </Swiper>
     </section>
   )
 }

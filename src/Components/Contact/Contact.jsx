@@ -4,6 +4,7 @@ import {MdOutlineEmail} from 'react-icons/md'
 import {BsMessenger, BsWhatsapp} from 'react-icons/bs'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
 
 function Contact() {
 
@@ -15,8 +16,20 @@ function Contact() {
     emailjs.sendForm('service_qgmcrre', 'template_0ezs8x6', form.current, '1UZd121TsTwPxxmBY')
       .then((result) => {
           console.log(result.text);
+          Swal.fire({
+            position: 'top',
+            icon: 'success',
+            title: 'Your message has been sent',
+            showConfirmButton: false,
+            timer: 1500
+          })
       }, (error) => {
           console.log(error.text);
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+          })
       });
     e.target.reset()
   };

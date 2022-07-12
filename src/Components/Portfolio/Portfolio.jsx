@@ -1,54 +1,54 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
-import IMG4 from '../../assets/portfolio4.jpg'
-import IMG5 from '../../assets/portfolio5.png'
-import IMG6 from '../../assets/portfolio6.jpg'
+import IMG1 from '../../assets/smoothie.PNG'
+import IMG2 from '../../assets/comming-soon.PNG'
+import IMG3 from '../../assets/yoga.PNG'
+import IMG4 from '../../assets/sign-up.PNG'
+import IMG5 from '../../assets/sherlock.PNG'
+import IMG6 from '../../assets/next.PNG'
 
 const data = [
   {
   id: 1,
   image: IMG1,
-  title: 'enter title here',
+  title: 'Strawberry Rush',
   github: 'https://github.com/ntelio96',
-  demo: 'Dribble link'
+  demo: 'https://dribbble.com/shots/18757448-Smoothie-project-not-full-img'
 },
   {
   id: 2,
   image: IMG2,
-  title: 'enter title here',
+  title: 'Comming Soon Project',
   github: 'https://github.com/ntelio96',
-  demo: 'Dribble link'
+  demo: 'https://dribbble.com/shots/18757350-Comming-Soon-Project'
 },
   {
   id: 3,
   image: IMG3,
-  title: 'enter title here',
+  title: 'Yoga Project',
   github: 'https://github.com/ntelio96',
-  demo: 'Dribble link'
+  demo: 'https://dribbble.com/shots/18757393-Yoga-Project'
 },
   {
   id: 4,
   image: IMG4,
-  title: 'enter title here',
+  title: 'Sign-Up project',
   github: 'https://github.com/ntelio96',
-  demo: 'Dribble link'
+  demo: 'https://dribbble.com/shots/18757331-sign-up'
 },
   {
   id: 5,
   image: IMG5,
-  title: 'enter title here',
+  title: 'Sherlock Ingestigatin Error 404 ',
   github: 'https://github.com/ntelio96',
-  demo: 'Dribble link'
+  demo: 'https://dribbble.com/shots/18757339-Sherlock-On-The-Case'
 },
   {
   id: 6,
   image: IMG6,
-  title: 'enter title here',
+  title: 'Modern Web design project',
   github: 'https://github.com/ntelio96',
-  demo: 'Dribble link'
+  demo: 'https://dribbble.com/shots/18757442-Practice-makes-perfect-not-full-img'
 }
 ]
 

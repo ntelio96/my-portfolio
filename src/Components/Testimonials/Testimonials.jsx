@@ -53,17 +53,14 @@ function Testimonials() {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}>
         {
-          data.map(({avatar, title, review}, i) =>
-          { return ( 
+          data.map(({avatar, title, review}, i) => { 
+            return ( 
             <SwiperSlide key={i} className="testimonial">
-              
               <div className="client__avatar">
                 <img src={avatar}/>
               </div>
               <h5 className='client__name'>{title}</h5>
-              <small className='client__review'>
-                {review}
-              </small>
+              <small className='client__review'>{review}</small>
             </SwiperSlide>
           )
           })

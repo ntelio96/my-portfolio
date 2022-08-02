@@ -38,7 +38,7 @@ body {
 font-family: 'Poppins', sans-serif;
 background: var(--color-bg);
 color: var(--color-white);
-line-height: 1.7rem;
+line-height: 1.7;
 background-image: url('../src/assets/bg-texture.png');
 }
 
@@ -92,7 +92,7 @@ a:hover{
     cursor: pointer;
     border: 1px solid var(--color-primary);
     transition: var(--transition);
-    border-radius: 10px;
+    border-radius: 0.4rem;
 }
 
 .btn:hover{
